@@ -1,0 +1,76 @@
+{
+  "cv_setup": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "primary_metric": "f1"
+  },
+  "Random Forest Tuned": {
+    "best_parameters": {
+      "max_depth": null,
+      "max_features": "log2",
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_estimators": 200
+    },
+    "cv_metrics": {
+      "mean_f1": 0.9091994102850167,
+      "std_f1": 0.006488686518252837,
+      "mean_accuracy": 0.9086838834101212,
+      "std_accuracy": 0.006688607846942751,
+      "mean_precision": 0.9042911239194937,
+      "std_precision": 0.010041383378370223,
+      "mean_recall": 0.9142616972175389,
+      "std_recall": 0.008501487584691715
+    },
+    "test_metrics": {
+      "accuracy": 0.912948,
+      "precision": 0.906196,
+      "recall": 0.92126,
+      "f1_score": 0.913666,
+      "confusion_matrix": [
+        [
+          1034,
+          109
+        ],
+        [
+          90,
+          1053
+        ]
+      ]
+    }
+  },
+  "SVM Tuned": {
+    "best_parameters": {
+      "C": 10.0,
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "cv_metrics": {
+      "mean_f1": 0.9050978567277772,
+      "std_f1": 0.0059456414364817385,
+      "mean_accuracy": 0.9055118543571657,
+      "std_accuracy": 0.005972600872989546,
+      "mean_precision": 0.909147653075418,
+      "std_precision": 0.00787267462554674,
+      "mean_recall": 0.9011366598510122,
+      "std_recall": 0.0075389545306041575
+    },
+    "test_metrics": {
+      "accuracy": 0.905074,
+      "precision": 0.90757,
+      "recall": 0.902012,
+      "f1_score": 0.904783,
+      "confusion_matrix": [
+        [
+          1038,
+          105
+        ],
+        [
+          112,
+          1031
+        ]
+      ]
+    }
+  }
+}

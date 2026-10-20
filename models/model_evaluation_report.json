@@ -1,0 +1,216 @@
+{
+  "Logistic Regression": {
+    "parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 1000,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "use_scaled_data": true,
+    "train_metrics": {
+      "accuracy": 0.852362,
+      "precision": 0.869665,
+      "recall": 0.828959,
+      "f1_score": 0.848824,
+      "confusion_matrix": [
+        [
+          4004,
+          568
+        ],
+        [
+          782,
+          3790
+        ]
+      ]
+    },
+    "test_metrics": {
+      "accuracy": 0.844269,
+      "precision": 0.866729,
+      "recall": 0.813648,
+      "f1_score": 0.83935,
+      "confusion_matrix": [
+        [
+          1000,
+          143
+        ],
+        [
+          213,
+          930
+        ]
+      ]
+    },
+    "overfitting_gap_accuracy": 0.008093
+  },
+  "Decision Tree": {
+    "parameters": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "use_scaled_data": false,
+    "train_metrics": {
+      "accuracy": 0.996938,
+      "precision": 0.998246,
+      "recall": 0.995626,
+      "f1_score": 0.996934,
+      "confusion_matrix": [
+        [
+          4564,
+          8
+        ],
+        [
+          20,
+          4552
+        ]
+      ]
+    },
+    "test_metrics": {
+      "accuracy": 0.875328,
+      "precision": 0.87175,
+      "recall": 0.88014,
+      "f1_score": 0.875925,
+      "confusion_matrix": [
+        [
+          995,
+          148
+        ],
+        [
+          137,
+          1006
+        ]
+      ]
+    },
+    "overfitting_gap_accuracy": 0.12161
+  },
+  "Random Forest": {
+    "parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 100,
+      "n_jobs": null,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "use_scaled_data": false,
+    "train_metrics": {
+      "accuracy": 0.996938,
+      "precision": 0.997591,
+      "recall": 0.996282,
+      "f1_score": 0.996936,
+      "confusion_matrix": [
+        [
+          4561,
+          11
+        ],
+        [
+          17,
+          4555
+        ]
+      ]
+    },
+    "test_metrics": {
+      "accuracy": 0.912511,
+      "precision": 0.911072,
+      "recall": 0.914261,
+      "f1_score": 0.912664,
+      "confusion_matrix": [
+        [
+          1041,
+          102
+        ],
+        [
+          98,
+          1045
+        ]
+      ]
+    },
+    "overfitting_gap_accuracy": 0.084427
+  },
+  "Support Vector Machine": {
+    "parameters": {
+      "C": 1.0,
+      "break_ties": false,
+      "cache_size": 200,
+      "class_weight": null,
+      "coef0": 0.0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "scale",
+      "kernel": "rbf",
+      "max_iter": -1,
+      "probability": false,
+      "random_state": 42,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    },
+    "use_scaled_data": true,
+    "train_metrics": {
+      "accuracy": 0.901356,
+      "precision": 0.905256,
+      "recall": 0.896544,
+      "f1_score": 0.900879,
+      "confusion_matrix": [
+        [
+          4143,
+          429
+        ],
+        [
+          473,
+          4099
+        ]
+      ]
+    },
+    "test_metrics": {
+      "accuracy": 0.893701,
+      "precision": 0.894046,
+      "recall": 0.893263,
+      "f1_score": 0.893654,
+      "confusion_matrix": [
+        [
+          1022,
+          121
+        ],
+        [
+          122,
+          1021
+        ]
+      ]
+    },
+    "overfitting_gap_accuracy": 0.007655
+  }
+}
